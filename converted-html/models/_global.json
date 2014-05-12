@@ -6,6 +6,7 @@
 	"blogPageTitlePrefix": "Blog",
 	"blogArchivePageTitlePrefix": "Archive",
 	"pageTitleSeperator": " · ",
+	"pageTitleSeperatorNoTrailingSpace": " ·",
 	"favoriteToolsPageTitlePrefix": "Favorite Tools",
 	"favoriteBooksPageTitlePrefix": "Favorite Books",
 	"version": "5"

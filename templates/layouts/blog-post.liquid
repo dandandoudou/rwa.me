@@ -19,7 +19,7 @@
 					{% block content %}{% endblock %}
 
 					<div class="social text-center">
-						<a href="https://twitter.com/share" class="twitter-share-button" data-via="rickwaalders" data-count="none" data-url="{{global.baseUrl}}{{ model.slug }}" data-text="{{ model.title }}{{global.pageTitleSeperator}}">Tweet</a>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="rickwaalders" data-count="none" data-url="{{global.baseUrl}}{{ model.slug }}" data-text="{{ model.title }}{{global.pageTitleSeperatorNoTrailingSpace}}">Tweet</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 						{% include "subscribe" %}
@@ -38,24 +38,24 @@
 		{% if next or previous %}
 		<div class="row next-prev">
 
-			<div class="large-6 columns next">
-
-			{% if next %}
-				<h4>Next post</h4>
-				<p>
-					<a href="{{ next.url }}">{{ next.title }}</a>
-				</p>
-
-			{% endif %}
-
-			</div>
-
 			<div class="large-6 columns prev">
 
 			{% if previous %}
 				<h4>Previous post</h4>
 				<p>
 					<a href="{{ previous.url }}">{{ previous.title }}</a>
+				</p>
+
+			{% endif %}
+
+			</div>
+
+			<div class="large-6 columns next text-right">
+
+			{% if next %}
+				<h4>Next post</h4>
+				<p>
+					<a href="{{ next.url }}">{{ next.title }}</a>
 				</p>
 
 			{% endif %}
@@ -71,7 +71,7 @@
 		<div class="large-12 columns">
 
 			<p class="text-center back">
-				<a href="/archive">Archive</a>
+				<a href="/archive">Archive</a> | <a href="/rss">RSS</a>
 			</p>
 
 

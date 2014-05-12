@@ -1674,7 +1674,6 @@ h5 {
 h6 {
   font-size: 1rem; }
 
-
 hr {
   border: solid #ddd;
   border-width: 1px 0 0;
@@ -1904,12 +1903,10 @@ html, body {
   height: 100%;
   min-height: 100%; }
 
-
 body {
   color: #1a1e1f;
   -webkit-font-smoothing: antialiased;
-  background-color: #f9f8f3;
-  background-image: url(../img/old_moon.png); }
+  background-color: #fbfbfb; }
 
 body.scrolldisabled, html.scrolldisabled {
   overflow-x: hidden;
@@ -1949,13 +1946,13 @@ img {
   max-width: 760px; }
 
 .row {
-  max-width: 940px; }
+  max-width: 840px; }
 
 p, ul {
   font-family: "ff-tisa-web-pro", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 1.6em; }
 
 ul li * {
@@ -2118,7 +2115,6 @@ a.view-my-work:hover {
   color: #1effbe;
   border-color: #1effbe; }
 
-
 .main-content-intro {
   margin-bottom: 65px; }
 
@@ -2225,17 +2221,30 @@ a.cta:hover {
 
 /* Projects */
 .work-list {
-  color: #000; }
+  color: #000;
+  margin-left: 25px; }
+
+.work-list li {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em; }
 
 .work-list li span {
   color: #999; }
 
 .work-list li a {
   color: #000;
-  text-decoration: underline; }
+  text-decoration: underline;
+  margin-left: 0.1em; }
 
 .work-list li a:hover {
   color: #222; }
+
+p a, ul a {
+  color: #000;
+  text-decoration: underline; }
+
+p a:hover, ul a:hover {
+  color: #ea5957; }
 
 #work {
   margin-bottom: 50px; }
@@ -2244,14 +2253,17 @@ a.cta:hover {
   margin-top: 50px; }
 
 #work .row {
-  margin-bottom: 50px !important; }
+  margin-bottom: 0px !important; }
 
 .project {
   margin-bottom: 25px;
   display: block;
-  -webkit-box-shadow: 0px 2px 22px 0px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: 0px 2px 22px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 2px 22px 0px rgba(50, 50, 50, 0.3); }
+  border: 1px solid #ddd;
+  background-color: White; }
+
+.project-image {
+  background-color: black;
+  margin: 6px; }
 
 .project:hover img {
   opacity: 0.8; }
@@ -2266,7 +2278,7 @@ a.cta:hover {
 
 .project-title {
   background-color: #fff;
-  color: #333;
+  color: #000;
   font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -2278,7 +2290,7 @@ a.cta:hover {
   border-radius: 100px;
   position: absolute;
   top: 50%;
-  margin-top: -100px;
+  margin-top: -110px;
   left: 50%;
   margin-left: -100px;
   text-transform: uppercase;
@@ -2687,9 +2699,6 @@ p.project-back {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; }
 
-
-
-
 .next-prev h4 {
   font-family: "ff-tisa-web-pro", serif;
   font-style: normal;
@@ -2902,8 +2911,9 @@ footer .columns {
 .shot-image {
   -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
-  transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1); }
-
+  transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
+  width: 100%;
+  height: 100%; }
 
 .shots .shot-container a img {
   opacity: 1; }
