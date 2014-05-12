@@ -2013,8 +2013,8 @@ a:hover {
     padding-bottom: 25px; } }
 
 #top {
-  padding-top: 100px;
-  padding-bottom: 75px; }
+  padding-top: 50px;
+  padding-bottom: 25px; }
 
 #top-container {
   background-image: url(../img/line.png);
@@ -2023,33 +2023,51 @@ a:hover {
   z-index: 300; }
 
 #logo {
-  border: 3px solid #1a1e1f;
+  border: 2px solid #1a1e1f;
   color: #1a1e1f;
   font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 3em;
+  font-size: 1.5em;
   width: 4em;
-  padding: 22px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 300; }
+  z-index: 9999999;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
+  transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
+  opacity: 1; }
+
+#logo:hover {
+  opacity: 0.8; }
+
+#nav-container {
+  float: right;
+  display: inline-block;
+  position: relative; }
 
 #nav {
   font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 0.8em;
   text-transform: uppercase;
   padding-top: 25px;
   padding-bottom: 25px;
-  z-index: 300; }
+  z-index: 300;
+  float: right;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0.95em;
+  position: relative;
+  top: -20px; }
 
 #nav a {
   color: #ea5957;
-  margin-left: 10px;
-  margin-right: 10px; }
+  margin-left: 30px; }
 
 #nav a:hover {
   color: #1a1e1f; }
@@ -2120,7 +2138,7 @@ a.view-my-work:hover {
 
 #main-content {
   display: block;
-  padding-top: 75px; }
+  padding-top: 25px; }
 
 #main-content.no-top {
   padding-top: 0 !important; }
@@ -2133,12 +2151,22 @@ a.view-my-work:hover {
     padding-top: 50px;
     padding-bottom: 15px; }
   #logo {
-    font-size: 2em;
-    width: 4em;
-    padding: 22px; }
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  #nav-container {
+    text-align: center;
+    float: none;
+    display: inline;
+    position: static; }
   #nav {
-    margin-top: 5px;
-    margin-bottom: 20px; }
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: block;
+    float: none; }
+  #nav a {
+    margin-left: 10px;
+    margin-right: 10px; }
   #intro-dot {
     top: 25px; }
   #intro {
@@ -2639,15 +2667,16 @@ dl.project-details dd {
 
 /* Blog */
 .blog-post {
-  margin-bottom: 100px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 .blog-post h2 {
   text-align: center;
   border: none;
-  font-family: "brandon-grotesque", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 4em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
   text-transform: none;
   padding: 0;
   margin: 0;
