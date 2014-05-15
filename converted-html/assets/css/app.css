@@ -2284,14 +2284,8 @@ p a:hover, ul a:hover {
   margin-bottom: 0px !important; }
 
 .project {
-  margin-bottom: 25px;
-  display: block;
-  border: 1px solid #ddd;
-  background-color: White; }
-
-.project-image {
-  background-color: black;
-  margin: 6px; }
+  margin-bottom: 30px;
+  display: block; }
 
 .project:hover img {
   opacity: 0.8; }
@@ -2301,34 +2295,42 @@ p a:hover, ul a:hover {
   -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   display: block;
-  opacity: 1;
-  -webkit-filter: none; }
+  opacity: 1; }
 
-.project-title {
+.project-title-container {
   background-color: #fff;
-  color: #000;
-  font-family: "brandon-grotesque", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 1em;
-  line-height: 200px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
   position: absolute;
-  top: 50%;
-  margin-top: -110px;
-  left: 50%;
-  margin-left: -100px;
-  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1); }
 
-.project:hover .project-title {
-  opacity: 0.95; }
+.project-title {
+  color: #000;
+  font-family: "brandon-grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  margin-top: -70px;
+  height: 100px;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  line-height: 100px; }
+
+.project:hover .project-title-container {
+  opacity: 0.75; }
 
 .more-work {
   margin-top: 50px !important;
@@ -2900,11 +2902,9 @@ footer .columns {
   padding: 0; }
 
 .shots .row {
-  margin-bottom: 25px !important; }
+  margin-bottom: 30px !important; }
 
 .shots .shot-container {
-  border: 1px solid #ddd;
-  background-color: White;
   float: left;
   position: relative; }
 
@@ -2932,10 +2932,6 @@ footer .columns {
   -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1); }
-
-.shot {
-  background-color: black;
-  margin: 6px; }
 
 .shot-image {
   -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
