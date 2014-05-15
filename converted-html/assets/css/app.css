@@ -2285,7 +2285,8 @@ p a:hover, ul a:hover {
 
 .project {
   margin-bottom: 30px;
-  display: block; }
+  display: block;
+  background-color: #000; }
 
 .project:hover img {
   opacity: 0.8; }
@@ -2297,8 +2298,12 @@ p a:hover, ul a:hover {
   display: block;
   opacity: 1; }
 
+.project-image {
+  -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
+  transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1); }
+
 .project-title-container {
-  background-color: #fff;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -2314,12 +2319,11 @@ p a:hover, ul a:hover {
   transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1); }
 
 .project-title {
-  color: #000;
-  font-family: "brandon-grotesque", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 0.9em;
-  text-transform: uppercase;
+  color: #fff;
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.8em;
   position: absolute;
   top: 50%;
   margin-top: -70px;
@@ -2329,8 +2333,11 @@ p a:hover, ul a:hover {
   margin-left: -100px;
   line-height: 100px; }
 
+.project:hover .project-image {
+  opacity: 0.3; }
+
 .project:hover .project-title-container {
-  opacity: 0.75; }
+  opacity: 1; }
 
 .more-work {
   margin-top: 50px !important;
@@ -2670,7 +2677,7 @@ dl.project-details dd {
 /* Blog */
 .blog-post {
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 0; }
 
 .blog-post h2 {
   text-align: center;
@@ -2906,29 +2913,27 @@ footer .columns {
 
 .shots .shot-container {
   float: left;
-  position: relative; }
+  position: relative;
+  background-color: #000; }
 
 .shots .shot-container .shot-info {
   display: inline-block;
   position: absolute;
   width: 100px;
   height: 100px;
-  -webkit-border-radius: 50px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 50px;
-  -moz-background-clip: padding;
-  border-radius: 50px;
-  background-clip: padding-box;
   top: 50%;
   left: 50%;
   margin-left: -50px;
   margin-top: -50px;
-  font-size: 15px;
-  background-color: #fff;
-  color: #111;
+  color: #fff;
   line-height: 100px;
   text-align: center;
   opacity: 0;
+  color: #fff;
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.2em;
   -webkit-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   -moz-transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1);
   transition: all 0.6s cubic-bezier(0.16, 0.83, 0.21, 1); }
@@ -2944,7 +2949,7 @@ footer .columns {
   opacity: 1; }
 
 .shots .shot-container a:hover img {
-  opacity: 0.8; }
+  opacity: 0.3; }
 
 .shots .shot-container a:hover .shot-info {
   opacity: 1; }
