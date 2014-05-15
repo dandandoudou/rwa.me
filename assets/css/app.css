@@ -2017,20 +2017,20 @@ a:hover {
   padding-bottom: 25px; }
 
 #top-container {
-  background-image: url(../img/line.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+  /*background-image: url(../img/line.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	*/
   z-index: 300; }
 
 #logo {
-  border: 2px solid #1a1e1f;
   color: #1a1e1f;
   font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 1.5em;
-  width: 4em;
+  font-size: 1.3em;
   text-align: center;
+  text-transform: uppercase;
   z-index: 9999999;
   display: inline-block;
   height: 50px;
